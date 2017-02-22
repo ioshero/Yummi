@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.almabranding.yummi.WelcomeActivity">
+
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_top_margin"
+            android:src="@mipmap/logo_black" />
+
+
+        <TextView
+            android:id="@+id/promo_texview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/client_promo_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/welcome_button_text_size" />
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_logo"
+            android:layout_marginTop="@dimen/field_top_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_firs_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-12dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="@string/email"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/reg_firs_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_firs_email"
+                    android:layout_marginBottom="-12dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/reg_first_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_firs_password"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/reg_first_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_first_confirm_password"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/main_grey_button"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/welcome_button_text_size"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/first_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reg_first_button"
+                    android:textColor="#000"
+                    android:text="I have read and agree to the"
+                    android:textSize="@dimen/register_text_size"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+                <TextView
+                    android:id="@+id/terms_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first_terms"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="38dp"
+                    android:text="@string/terms"
+                    android:textColor="@color/buttonGoldColor"
+                    android:textSize="@dimen/register_text_size" />
+
+                <Switch
+                    android:id="@+id/switch_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/first_terms"
+                    android:layout_alignTop="@+id/first_terms"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textOff=""
+                    android:textOn=""
+                    android:textSize="@dimen/register_text_size"
+                    />
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/need_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="@string/need_help"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/register_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/need_help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/gold_circle_background"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_button_text_size"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/webView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.8"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_below="@+id/webView_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/webView_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:src="@mipmap/close" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

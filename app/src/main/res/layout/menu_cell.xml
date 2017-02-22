@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="4dp"
+        android:background="#f8f8f8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+
+        <com.almabranding.yummi.utils.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/menu_icon_profile" />
+
+        <TextView
+            android:id="@+id/text_view_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1.8"
+            android:gravity="left|center_vertical"
+            android:text="My Profile"
+            android:textColor="#000" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+    </View>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.almabranding.yummi.WelcomeActivity">
+
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_top_margin"
+            android:src="@mipmap/logo_black" />
+
+
+        <TextView
+            android:id="@+id/promo_texview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/client_promo_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/welcome_button_text_size" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_logo"
+            android:layout_marginTop="@dimen/field_top_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_sec_stagename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-12dp"
+                    android:inputType="numberSigned"
+                    android:maxLength="8"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="ID number"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/reg_sec_realname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:maxLength="7"
+                    android:layout_below="@+id/reg_sec_stagename"
+                    android:layout_marginBottom="-12dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="BSB: xxx-xxx (eg 123-456)"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:id="@+id/reg_sec_acount_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_sec_realname"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="numberSigned"
+                    android:maxLength="10"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="Account number Usually 8-10 digits"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/reg_sec_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:layout_below="@+id/reg_sec_acount_number"
+                    android:background="@drawable/main_grey_button"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/welcome_button_text_size"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/need_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="@string/need_help"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/register_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/need_help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/gold_circle_background"
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_button_text_size"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

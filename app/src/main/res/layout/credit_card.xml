@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card number" />
+
+    <EditText
+        android:id="@+id/editTextcardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:nextFocusDown="@+id/editTextmonth"
+        android:nextFocusForward="@+id/editTextmonth"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month" />
+
+            <EditText
+                android:id="@+id/editTextmonth"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:nextFocusDown="@+id/editTextyear"
+                android:nextFocusForward="@+id/editTextyear"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:gravity="bottom"
+            android:text="/"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year" />
+
+            <EditText
+                android:id="@+id/editTextyear"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:nextFocusDown="@+id/editTextcvc"
+                android:nextFocusForward="@+id/editTextcvc"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:scaleType="centerInside"
+            android:src="@mipmap/stp_card_placeholder_template"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CVC" />
+
+    <EditText
+        android:id="@+id/editTextcvc"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@+id/button_pay_card"
+        android:nextFocusForward="@+id/button_pay_card"
+        android:lines="1"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/button_pay_card"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gold_button_selector"
+        android:gravity="center"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/welcome_button_text_size"
+        android:textStyle="bold" />
+</LinearLayout>

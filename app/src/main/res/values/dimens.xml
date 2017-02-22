@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="welcome_button_text_size">16sp</dimen>
+
+    <dimen name="register_text_size">12sp</dimen>
+
+    <dimen name="logo_top_margin">36dp</dimen>
+    <dimen name="field_top_margin">80dp</dimen>
+    <dimen name="add_image_view_height">30dp</dimen>
+
+
+
+    <dimen name="photo_size_square">640px</dimen>
+
+    <dimen name="photo_size_width">1000px</dimen>
+
+</resources>

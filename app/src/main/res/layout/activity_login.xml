@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.almabranding.yummi.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_top_margin"
+            android:src="@mipmap/logo_black" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_logo"
+            android:layout_marginTop="@dimen/field_top_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-12dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:hint="@string/username"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_username"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:lines="1" />
+
+                <Button
+                    android:id="@+id/log_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_password"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/main_black_button"
+                    android:gravity="center"
+                    android:text="@string/log_in"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/welcome_button_text_size"
+                    android:textStyle="bold" />
+
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_below="@+id/log_in_button"
+                    android:text="@string/remember_me"
+                    android:textColor="@android:color/black"
+                    android:textOff=""
+                    android:textOn=""
+                    android:textSize="@dimen/register_text_size"
+                    />
+
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/log_in_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/forgot_password"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/register_text_size" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/need_help"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="@string/need_help"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/register_text_size" />
+
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_above="@id/need_help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="@string/sign_up_for_yummi"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/register_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

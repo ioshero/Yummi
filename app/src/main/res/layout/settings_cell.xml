@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="4dp"
+    android:background="@color/whiteColor"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="2.0">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.1"
+        android:gravity="left|center_vertical"
+        android:text="" />
+
+
+    <LinearLayout
+        android:id="@+id/triple_choice_layout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right"
+        android:layout_weight="0.8"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/choice_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/left_on"
+            android:gravity="center"
+            android:text="kg"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/choice_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/right_off"
+            android:gravity="center"
+            android:textColor="@color/radioCorrnerGray" />
+    </LinearLayout>
+
+</LinearLayout>

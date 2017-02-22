@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/fifth"
+    android:background="@color/bgColor"
+    tools:context="com.almabranding.yummi.WelcomeActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo_gold"
+        android:layout_marginTop="@dimen/logo_top_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_logo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/performer_promo_text"
+        android:id="@+id/promo_texview"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:textSize="@dimen/welcome_button_text_size"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/login_logo" />
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/triple_choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_below="@+id/login_logo"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_hair"
+            android:layout_weight="1.5" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/triple_choice_layout_a"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_below="@+id/triple_choice_layout"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_Bust"
+            android:layout_weight="1.5" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/triple_choice_layout_b"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_below="@+id/triple_choice_layout_a"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_Body"
+            android:layout_weight="1.5" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/triple_choice_layout_b"
+        android:textSize="@dimen/welcome_button_text_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/main_gold_button"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:id="@+id/reg_third_button" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_help"
+        android:textColor="@android:color/black"
+        android:id="@+id/need_help"
+        android:textSize="@dimen/register_text_size"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/welcome_button_text_size"
+        android:textStyle="bold"
+        android:background="@drawable/gold_circle_background"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/need_help"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

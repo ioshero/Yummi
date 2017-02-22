@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="180dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextcardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:nextFocusDown="@+id/editTextmonth"
+        android:nextFocusForward="@+id/editTextmonth"
+        android:inputType="numberDecimal"
+        android:hint="amount in AUD"
+        android:textSize="14sp"
+        android:lines="1"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+
+    <Button
+        android:id="@+id/button_pay_card"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gold_button_selector"
+        android:gravity="center"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/welcome_button_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

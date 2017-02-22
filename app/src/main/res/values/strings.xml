@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Yummi</string>
+
+    <string name="welcome_client_text">I\'m  a client</string>
+    <string name="welcome_performer_text">I\'m  a performer</string>
+
+    <string name="username">Login</string>
+    <string name="password">Password</string>
+    <string name="confirm_password"> Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="next">Next</string>
+
+    <string name="no">No</string>
+    <string name="hidden">Hidden</string>
+    <string name="yes">Yes</string>
+
+    <string name="height">Height : </string>
+    <string name="age">Age : </string>
+    <string name="demo_min_label"></string>
+    <string name="demo_max_label"></string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="scount">Service count: </string>
+    <string name="sduration">Duration: </string>
+    <string name="sprice">Price: </string>
+
+    <string name="image_text">UPLOAD YOUR BEST PHOTOS \nTO GET MORE CLIENTS EASILY</string>
+    <string name="id_image_text">UPLOAD AT LEAST ONE PHOTO ID</string>
+
+    <string name="performers">Performers</string>
+    <string name="guests">Guests</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="services">Services</string>
+    <string name="pricing">Pricing</string>
+    <string name="bio">Bio &amp; Info</string>
+    <string name="schedulde">Schedulde</string>
+
+    <string name="req_img">Request \nImage</string>
+    <string name="req_chat">Request \nChat</string>
+    <string name="book">Book</string>
+
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="duration">Duration</string>
+    <string name="location">Location</string>
+
+    <string name="hair">Hair colour </string>
+    <string name="bust">Bust size </string>
+    <string name="body">Body type </string>
+
+    <string name="realname">Real name</string>
+    <string name="stagename">Stage name</string>
+
+    <string name="client_promo_text">SIGN UP FOR FREE AND START \nENJOYING THE YUMMI COMMUNITY</string>
+    <string name="performer_promo_text">SIGN UP FOR FREE AND START \nGETTING CLIENTS</string>
+
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="gender">Gender</string>
+    <string name="interested_in">Interested in</string>
+    <string name="forgot_password"><u>Forgot your password?</u></string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_up_for_yummi"><u>Sign up for Yummi</u></string>
+    <string name="set_up_your_services">Set up your Services now or complete your profile  later from your dashboard.</string>
+
+    <string name="error">Error</string>
+    <string name="wrong_password">The password has to be at least 8 character long and has to contain numeric and uppercase character</string>
+    <string name="wrong_email">The email field is incorrect</string>
+    <string name="wrong_username">The username field is incorrect</string>
+
+
+    <string-array name="menu_array">
+        <item>My Profile</item>
+        <item>Notifications</item>
+        <item>Search</item>
+        <item>My media</item>
+        <item>Events</item>
+        <item>Payment</item>
+        <item>Promo Codes</item>
+        <item>Settings</item>
+        <item>Help</item>
+        <item>Emergency Call</item>
+        <item>Log out</item>
+    </string-array>
+
+
+    <string-array name="menu_array_performer">
+        <item>My Profile</item>
+        <item>Profile View</item>
+        <item>Notifications</item>
+        <item>Events</item>
+        <item>My Income</item>
+        <item>Settings</item>
+        <item>Help</item>
+        <item>Emergency Call</item>
+        <item>Log out</item>
+    </string-array>
+
+ <string name="need_help">
+        <u>need help?</u>
+    </string>
+
+     <string name="terms">
+        <u>Terms and Conditions</u>
+    </string>
+</resources>

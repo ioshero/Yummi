@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/triple_choice_layout"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <TextView
+                    android:id="@+id/choice_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/left_on"
+                    android:gravity="center"
+                    android:text="All"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/choice_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/mid_off"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/choice_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/mid_off"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/choice_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/right_off"
+                    android:gravity="center"
+                    android:text="Fluid"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Price Range"
+                android:textColor="#000" />
+
+            <com.almabranding.yummi.utils.PriceRangeSeek
+                android:id="@+id/priceRangeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="35dp"
+                rsb:absoluteMaxValue="2000"
+                rsb:absoluteMinValue="100"
+                rsb:textAboveThumbsColor="#000"
+                rsb:thumbDisabled="@mipmap/button_icon_thumb"
+                rsb:thumbNormal="@mipmap/button_icon_thumb"
+                rsb:thumbPressed="@mipmap/button_icon_thumb"
+                rsb:thumbShadow="true"
+                rsb:thumbShadowBlur="3dp"
+                rsb:thumbShadowColor="@color/primary_material_light"
+                rsb:thumbShadowXOffset="1dp"
+                rsb:thumbShadowYOffset="2dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Age"
+                android:textColor="#000" />
+
+            <com.almabranding.yummi.utils.YummiRangeSeek
+                android:id="@+id/ageRangeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="35dp"
+                rsb:absoluteMaxValue="50"
+                rsb:absoluteMinValue="18"
+                rsb:textAboveThumbsColor="#000"
+                rsb:thumbDisabled="@mipmap/button_icon_thumb"
+                rsb:thumbNormal="@mipmap/button_icon_thumb"
+                rsb:thumbPressed="@mipmap/button_icon_thumb"
+                rsb:thumbShadow="true"
+                rsb:thumbShadowBlur="3dp"
+                rsb:thumbShadowColor="@color/primary_material_light"
+                rsb:thumbShadowXOffset="1dp"
+                rsb:thumbShadowYOffset="2dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Height"
+                android:textColor="#000" />
+
+            <com.almabranding.yummi.utils.HeightRangeSeek
+                android:id="@+id/heightRangeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="35dp"
+                rsb:absoluteMaxValue="220"
+                rsb:absoluteMinValue="140"
+                rsb:textAboveThumbsColor="#000"
+                rsb:thumbDisabled="@mipmap/button_icon_thumb"
+                rsb:thumbNormal="@mipmap/button_icon_thumb"
+                rsb:thumbPressed="@mipmap/button_icon_thumb"
+                rsb:thumbShadow="true"
+                rsb:thumbShadowBlur="3dp"
+                rsb:thumbShadowColor="@color/primary_material_light"
+                rsb:thumbShadowXOffset="1dp"
+                rsb:thumbShadowYOffset="2dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Distance"
+                android:textColor="#000" />
+
+            <com.almabranding.yummi.utils.DistanceRangeSeek
+                android:id="@+id/distanceRangeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="35dp"
+                rsb:absoluteMaxValue="2000"
+                rsb:absoluteMinValue="50"
+                rsb:singleThumb="true"
+                rsb:textAboveThumbsColor="#000"
+                rsb:thumbDisabled="@mipmap/button_icon_thumb"
+                rsb:thumbNormal="@mipmap/button_icon_thumb"
+                rsb:thumbPressed="@mipmap/button_icon_thumb"
+                rsb:thumbShadow="true"
+                rsb:thumbShadowBlur="3dp"
+                rsb:thumbShadowColor="@color/primary_material_light"
+                rsb:thumbShadowXOffset="1dp"
+                rsb:thumbShadowYOffset="2dp" />
+
+            <LinearLayout
+                android:id="@+id/hair_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                android:layout_marginBottom="-12dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/service_textfield_style"
+                android:clickable="true"
+                android:gravity="top"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hair color"
+                    android:textColor="@color/greyyColor"
+                    android:textSize="9sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_hair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/body_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                android:layout_marginBottom="-12dp"
+                android:background="@drawable/service_textfield_style"
+                android:clickable="true"
+                android:gravity="top"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Body type"
+                    android:textColor="@color/greyyColor"
+                    android:textSize="9sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bust_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                android:layout_marginBottom="-12dp"
+                android:background="@drawable/service_textfield_style"
+                android:clickable="true"
+                android:gravity="top"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bust size"
+                    android:textColor="@color/greyyColor"
+                    android:textSize="9sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_Bust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

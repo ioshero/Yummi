@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.almabranding.yummi.WelcomeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <ImageView
+            android:id="@+id/welcome_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_top_margin"
+            android:src="@mipmap/logo_black" />
+
+        <Button
+            android:id="@+id/welcome_client_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_logo"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="@dimen/field_top_margin"
+            android:background="@drawable/main_black_button"
+            android:gravity="center"
+            android:text="@string/welcome_client_text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_button_text_size" />
+
+        <Button
+            android:id="@+id/welcome_performer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_client_button"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/main_gold_button"
+            android:gravity="center"
+            android:text="@string/welcome_performer_text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_button_text_size" />
+
+        <TextView
+            android:id="@+id/terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:text="@string/terms"
+            android:textColor="@color/buttonGoldColor"
+            android:textSize="@dimen/register_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/webView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.8"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_below="@+id/webView_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/webView_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:src="@mipmap/close" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

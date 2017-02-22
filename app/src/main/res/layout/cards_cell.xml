@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:weightSum="2.0"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:layout_height="60dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="••••••••••••"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_marginTop="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_marginRight="8dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/textView4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4/10"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_marginTop="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_marginRight="8dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:scaleType="centerCrop"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/imageView4"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/stp_card_placeholder_template"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/imageViewMark"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/approved"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c7c7cc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView4"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:weightSum="2.0"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:layout_height="80dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_marginRight="8dp"
+        android:gravity="left|center"
+        android:id="@+id/textView4" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:scaleType="centerCrop"
+        android:layout_height="60dp"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/message_count"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/red_circle_background"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:minWidth="48dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/pending_oval_background"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c7c7cc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView4"
+        />
+
+
+</RelativeLayout>

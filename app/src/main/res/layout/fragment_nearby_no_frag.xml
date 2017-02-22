@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:weightSum="3.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.0"
+                android:orientation="vertical"
+                android:weightSum="3.0">
+
+                <View
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<include-->
+    <!--android:id="@+id/navList"-->
+    <!--android:layout_width="320dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="right|end"-->
+    <!--android:background="#ffeeeeee" />-->
+
+
+</android.support.v4.widget.DrawerLayout>

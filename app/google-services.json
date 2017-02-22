@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "223509800995",
+    "project_id": "yummi-1295"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223509800995:android:704a5ee5e8f21cb6",
+        "android_client_info": {
+          "package_name": "com.almabranding.yummi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwdSIsydBC9GXB9IU-h-p5YB8oGVIsxT4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

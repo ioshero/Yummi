@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="2.0"
+    android:background="@color/buttonGoldColor"
+    android:gravity="center_vertical"
+    android:layout_height="60dp">
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.8"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:singleLine="true"
+        android:textColor="#555"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/textView4" />
+
+
+
+
+</LinearLayout>

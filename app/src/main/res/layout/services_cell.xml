@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="2.0"
+    android:layout_margin="4dp"
+    android:background="@color/whiteColor"
+    android:gravity="center_vertical"
+    android:layout_height="60dp">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/textView4" />
+
+
+    <LinearLayout
+        android:id="@+id/triple_choice_layout"
+        android:layout_width="0dp"
+        android:layout_weight="1.1"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+        <TextView
+            android:id="@+id/choice_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/left_on_black"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/choice_b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/mid_off_black"
+            android:gravity="center"
+            android:text="@string/hidden"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/choice_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/right_off_black"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>
